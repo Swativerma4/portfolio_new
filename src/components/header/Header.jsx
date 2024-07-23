@@ -1,54 +1,57 @@
-import React, { useState } from 'react'
+
+import Button from 'react-bootstrap/Button';
+import Container from 'react-bootstrap/Container';
+import Form from 'react-bootstrap/Form';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import Offcanvas from 'react-bootstrap/Offcanvas';
 import"./header.css"
-export default function Header() {
-   const[Toggle,showMenu]=useState(false);
+
+function OffcanvasExample() {
   return (
-    <header className='header'>
-    <nav className='nav container'>
-     <a href='index.html' className='nav__logo'>Swati.V</a> 
-     <div className={Toggle?"nav__menu show-menu":"nav__menu"}>
-      <ul className='nav__list_grid '>
-        <li className='nav__item'>
-           <a href='#home' className='nav__link '>
-            <i className='uil uil-estate nav__icon'></i>Home
-           </a>
-           
-        </li>
-        <li className='nav__item'>
-           <a href='#about' className='nav__link'>
-            <i className='uil uil-user nav__icon'></i>About
-           </a>
-        </li>
-        <li className='nav__item'>
-           <a href='#skills' className='nav__link'>
-            <i className='uil uil-file-alt nav__icon'></i>Skills 
-           </a>
-        </li>
-        <li className='nav__item'>
-           <a href='#services' className='nav__link'>
-            <i className='uil uil-briefcase-alt nav__icon'></i>
-           Services</a>
-        </li> 
-        <li className='nav__item'>
-           <a href='#portfolio' className='nav__link'>
-            <i className='uil uil-scenery nav__icon'></i>
-            Portfolio
-           </a>
-        </li> 
-        <li className='nav__item'>
-           <a href='#contact' className='nav__link'>
-            <i className='uil uil-message nav__icon'></i>
-            Contact 
-           </a>
-        </li> 
-      </ul>
-      <i className='uil uil-times nav__close' onClick={()=>showMenu(!Toggle)} ></i>
-     </div>
-     <div className='nav__toggle' onClick={()=>showMenu(!Toggle)}>
-        <i className='uil uil-apps'></i>
-     </div>
-    </nav>
-  </header>
-    
-  )
+    <>
+      {[  'md'].map((expand) => (
+        <Navbar key={expand} expand={expand} className="bg-body-tertiary mb-3">
+          <Container fluid>
+            <Navbar.Brand href="#">SWATI.VERMA</Navbar.Brand>
+          
+            <Navbar.Offcanvas
+              id={`offcanvasNavbar-expand-${expand}`}
+              aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
+              placement="end"
+            >
+              <Offcanvas.Header closeButton>
+                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
+                  SWATI.VERMA
+                </Offcanvas.Title>
+              </Offcanvas.Header>
+              <Offcanvas.Body>
+                <Nav className="justify-content-end flex-grow-1 pe-3">
+                <Nav className="me-auto">
+                <Nav.Link href="#home">Home</Nav.Link>
+                <Nav.Link href="#about">About Me </Nav.Link>
+                <Nav.Link href="#Skill">Skills </Nav.Link>
+                <Nav.Link href="#portfolio">Project </Nav.Link>
+               <Nav.Link href="#link">Contact Me </Nav.Link>
+                </Nav>
+                </Nav>
+                
+              </Offcanvas.Body>
+            </Navbar.Offcanvas>
+            <div className='flexSB'>
+             
+                  <a className='btn btn-primary'> Hire Me! </a>
+               </div>
+     
+ 
+       <Navbar.Toggle aria-controls="basic-navbar-nav" />
+
+          </Container>
+        </Navbar>
+      ))}
+    </>
+  );
 }
+
+export default OffcanvasExample;

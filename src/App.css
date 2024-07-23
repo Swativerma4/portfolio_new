@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+  
 :root {
   --header-height: 3rem;
   --hue: 0;
@@ -33,15 +33,10 @@
   --z-fixed: 100;
   --z-modal: 1000;
 }
-.button {
+body{
+  background-color: var(  --body-color);
 
-  display: inline-block;
-  background-color:var(--title-color);
-  color: var(--container-color);
-  padding: 1.25rem 2rem;
-  border-radius:1rem;
-  font-weight: var(--font-medium);
-     }
+}
 
 @media screen and (max-width: 992px) {
   :root {
@@ -122,9 +117,10 @@
     .section_subtitle{ text-align:center
 }
 .container{
-  max-height: 968px;
+ 
   margin-left: auto;
   margin-right: auto;
+
 }
 .grid{
   display: grid;
@@ -155,12 +151,34 @@
    
 }
 @media screen and (max-width:992px){
+  .container{
+    margin-left:2.5rem ;
+    margin-right: 2.5rem;
+  }
+  .button{
+    padding: 1rem 1.75rem;
+  }
+  .button_icon{
+    width: 22px;
+    height: 22px;
+  }
+}
+@media screen and (max-width:768px) {
+  .section {
+    padding: 2rem 0 4rem;
+  }
+  
+}
+@media screen and (max-width:570px) {
 
   
 }
+
 @media screen and (max-width:350px) {
   .container{
-    margin-left: -1rem;
-    margin-right: -20rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+
   }
+  
 }

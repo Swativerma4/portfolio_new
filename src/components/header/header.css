@@ -1,5 +1,5 @@
-.header{
-    width: 100%;
+/* .header{
+    width: 94%;
     position: fixed;
     top: 0;
     left: 0;
@@ -46,9 +46,9 @@
 .nav__icon,.nav__close,.nav__toggle{
     display: none;
     }
-.nav__link
-:hover{
-    color: var( --title-color-dark);
+.nav__link:hover{
+    color: black;
+
     
     
 }
@@ -83,9 +83,9 @@
         
     }
     .nav__toggle{
-       size: 2rem;
+       size: 2srem;
        cursor: pointer;
-       margin-right: 10px;
+        
 
         }
     
@@ -116,7 +116,7 @@
     .nav__link{
         column-gap: 0;
     }
-    @media screen and (max-width:350px){
+    @media screen and (max-width:448px){
         .nav__menu{
             padding: 2rem 0.5rem 4rem;
 
@@ -139,5 +139,243 @@
             
             
         }
+        
+       
+        
+        .nav__logo{
+            
+            position: absolute;
+             margin-left: -3rem;
+        }
     }
+    @media screen and (max-width:768px){
+        .nav__toggle{
+            padding-left: 40rem;
+        }
+        .nav__logo{
+        
+            position: absolute;
+             margin-left: -6rem;
+        }
+        .nav__list_grid{
+            row-gap: 5rem;
+            column-gap: 10rem;
+        }
+        .nav__close{
+             margin-top: 13rem;
+             margin-left: 2rem;
+        }
+       
+    }
+    @media screen and (max-width:629px){
+        .nav__toggle{
+            padding-left: 21rem;
+        }
+         
+        .nav__logo{
+            
+            position: absolute;
+             margin-left: -4rem;
+        }
+        .nav__list_grid{
+            row-gap: 4rem;
+            column-gap: 7rem;
+        }
+        .nav__close{
+             margin-top: 11rem;
+             margin-left: 2rem;
+        }
+        
+    }
+    @media screen and (max-width:515px){
+        .nav__toggle{
+            padding-left: 15rem;
+        }
+         
+        .nav__logo{
+            
+            position: absolute;
+             margin-left: -4rem;
+        }
+        .nav__list_grid{
+            row-gap: 4rem;
+            column-gap: 4rem;
+        }
+        .nav__close{
+             margin-top: 11rem;
+             margin-left: 2rem;
+        }
+    }
+} */
+/* Ensure the navbar brand and links are correctly styled */
+/* Base styles */
+/* General Navbar Styling */
+/* header.css */
+
+.navbar {
+    padding: 0.5rem 1rem;
+    width: 94rem;
+    position:fixed;
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 550;
+    margin-left: 10.9rem;
+  }
+  .navbar-nav{
+    margin-left: 13rem;
+  }
+  .navbar-nav .nav-link {
+    padding: 1rem ;
+    margin-left: 1rem;
+    font-weight: 650;
+ }
+  .hire-me-link {
+    margin-left: auto;
+    padding: 0.5rem 1rem;
+    background-color: #8750f7;;
+    color: white;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    margin-right: 10rem;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .hire-me-link:hover {
+    background-color: #6f42c8;
+    text-decoration: none;
+    transform: scale(1.05); /* Slightly enlarges the link */
+    box-shadow: 0 4px 8px white; /* Adds a shadow for depth */
+    background-color: #6f42c8;
+  box-shadow: 0 0 5px #6f42c8 ,
+  0 0 5px  #6f42c8, 
+  0 0 2px  #6f42c8,
+   0 0 2px #6f42c8;
+
+    color: white;
+  }
+  .btn-primary {
+     margin-right: 10rem;
+    gap: 10px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-size: 15px;
+    line-height: 1;
+    font-weight:700;
+    color: white;
+    text-transform: capitalize;
+    background-size: 200%;
+
+    background-image: -o-linear-gradient(left, var(--tj-theme-primary) 0%, var(--tj-theme-secondary) 51%, var(--tj-theme-primary) 100%);
+    background-image: linear-gradient(to right, var(--tj-theme-primary) 0%, var(--tj-theme-secondary) 51%, var(--tj-theme-primary) 100%);
+
+   
+    padding: 17px 35px;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+
+  }
+  .btn-primary i {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+  }
+  .btn-primary:hover {
+    background-position: -100%;
+  }
+  .btn-primary:hover i {
+    -webkit-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+  }
+  .nav-link:hover{
+   
+  }
+  .nav-link{
+    position: relative;
+  }
+  
+.nav-link::after{
+  content: " ";
+  opacity: 0;
+  transition: all 0.1s;
+  height: 2px;
+    width: 90%;
+background-color: #6638bb;
+position: absolute;
+bottom: 1rem;
+left: 2px;
+
 }
+.nav-link:hover::after{
+
+  opacity: 1;
+    }
+  
+
+
+  @media (max-width: 767.98px) {
+    .navbar-brand {
+      font-size: 1.25rem;
+    }
+  
+    .navbar-nav .nav-link {
+      padding: 0.5rem;
+    }
+  
+    .hire-me-link {
+      display: block;
+      text-align: center;
+      margin-top: 0.5rem;
+    }
+    .navbar-toggler {
+        display: block;
+      }
+  }
+  
+  @media (max-width: 768px) {
+    .btn-primary{
+      margin-left: 12rem;
+    }
+  }
+ 
+  @media (max-width: 1472px) {
+    
+    .navbar
+    {
+        width: 100rem;
+    }
+    
+  }
+  @media (max-width: 767.98px) {
+    .navbar-brand {
+      font-size: 1.25rem;
+    }
+    .navbar{
+        width: 55rem;
+    }
+    .navbar-nav .nav-link {
+      padding: 0.5rem;
+    }
+  
+    .hire-me-link {
+
+  
+      margin-top: 0.5rem;
+      margin-left: 100px;
+    }
+  
+    .navbar-toggler {
+     
+      margin-right: 2rem;
+    }
+  }
