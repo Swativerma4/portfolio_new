@@ -12,7 +12,7 @@ function OffcanvasExample() {
   return (
     <>
       {[  'md'].map((expand) => (
-        <Navbar key={expand} expand={expand} className="bg-body-tertiary mb-3">
+        <Navbar key={expand} expand={expand} className="bg-white mb-3  fixed-top navbar1">
           <Container fluid>
             <Navbar.Brand href="#">SWATI.VERMA</Navbar.Brand>
           
@@ -27,7 +27,7 @@ function OffcanvasExample() {
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
-                <Nav className="justify-content-end flex-grow-1 pe-3">
+                <Nav className="justify-content-end flex-grow-1 pe-8 navbar-custom">
                 <Nav className="me-auto">
                 <Nav.Link href="#home">Home</Nav.Link>
                 <Nav.Link href="#about">About Me </Nav.Link>

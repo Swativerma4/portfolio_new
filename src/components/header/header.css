@@ -2,47 +2,25 @@
 
 .navbar {
     padding: 0.5rem 1rem;
-    width: 94rem;
+ 
     position:fixed;
   }
-  
-  .navbar-brand {
+
+   .navbar-brand {
     font-size: 1.5rem;
     font-weight: 550;
     margin-left: 10.9rem;
+
+   
   }
-  .navbar-nav{
-    margin-left: 13rem;
-  }
+ 
   .navbar-nav .nav-link {
     padding: 1rem ;
     margin-left: 1rem;
     font-weight: 650;
- }
-  .hire-me-link {
-    margin-left: auto;
-    padding: 0.5rem 1rem;
-    background-color: #8750f7;;
-    color: white;
-    border-radius: 0.25rem;
-    text-decoration: none;
-    margin-right: 10rem;
-    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-  }
   
-  .hire-me-link:hover {
-    background-color: #6f42c8;
-    text-decoration: none;
-    transform: scale(1.05); /* Slightly enlarges the link */
-    box-shadow: 0 4px 8px white; /* Adds a shadow for depth */
-    background-color: #6f42c8;
-  box-shadow: 0 0 5px #6f42c8 ,
-  0 0 5px  #6f42c8, 
-  0 0 2px  #6f42c8,
-   0 0 2px #6f42c8;
-
-    color: white;
-  }
+ }
+ 
   .btn-primary {
      margin-right: 10rem;
     gap: 10px;
@@ -85,9 +63,7 @@
     -ms-transform: rotate(0);
     transform: rotate(0);
   }
-  .nav-link:hover{
-   
-  }
+
   .nav-link{
     position: relative;
   }
@@ -112,58 +88,94 @@ left: 2px;
 
 
   @media (max-width: 767.98px) {
+  
     .navbar-brand {
-      font-size: 1.25rem;
+      font-size:2rem;
+      
     }
   
     .navbar-nav .nav-link {
       padding: 0.5rem;
+     
     }
-  
+    
+    
     .hire-me-link {
       display: block;
       text-align: center;
       margin-top: 0.5rem;
+     
     }
     .navbar-toggler {
         display: block;
+        margin-left: 80rem;
+        position: absolute;
+      
       }
-  }
-  
-  @media (max-width: 768px) {
-    .btn-primary{
-      margin-left: 12rem;
-    }
-  }
- 
-  @media (max-width: 1472px) {
-    
-    .navbar
-    {
-        width: 100rem;
-    }
-    
-  }
-  @media (max-width: 767.98px) {
-    .navbar-brand {
-      font-size: 1.25rem;
-    }
-    .navbar{
-        width: 55rem;
-    }
-    .navbar-nav .nav-link {
-      padding: 0.5rem;
-    }
-  
-    .hire-me-link {
+      .offcanvas-backdrop {
+        background-color: rgba(0, 0, 0,100); /* Adjust opacity as needed */
+        z-index: 1040; /* Ensure it is above other content */
+      }
+      
+.nav-link::after{
+  content: " ";
+  opacity: 0;
+  transition: all 0.1s;
+  height: 2px;
+    width: 90%;
+background-color: #6638bb;
+position: absolute;
+bottom: 0.5rem;
+left: 2px;
 
-  
-      margin-top: 0.5rem;
-      margin-left: 100px;
+}
+.nav-link:hover::after{
+
+  opacity: 1;
     }
   
-    .navbar-toggler {
-     
-      margin-right: 2rem;
+    .btn-primary{
+     position: relative;
+     margin-right: 23rem;
+    }
+    .navbar1{
+      background-color: white;
+      margin-bottom: 7rem;
+      height: 5rem;
+
+    }
+  }
+  
+
+  @media (max-width: 1402px) {
+    
+    .btn-primary{
+      margin-left: 9rem;
+   
+    }
+    
+  }
+  @media (max-width: 1400px) {
+    
+    .btn-primary{
+      margin-left: -30rem;
+
+   
+    }
+  }
+  @media (max-width: 1016px) {
+    
+    .btn-primary{
+      margin-left: -40rem;
+
+   
+    }
+  }
+  @media (max-width: 1015px) {
+    
+    .btn-primary{
+      margin-left: -21rem;
+
+   
     }
   }
