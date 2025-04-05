@@ -1,0 +1,181 @@
+
+
+.navbar {
+    padding: 0.5rem 1rem;
+ 
+    position:fixed;
+  }
+
+   .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 550;
+    margin-left: 10.9rem;
+
+   
+  }
+ 
+  .navbar-nav .nav-link {
+    padding: 1rem ;
+    margin-left: 1rem;
+    font-weight: 650;
+  
+ }
+ 
+  .btn-primary {
+     margin-right: 10rem;
+    gap: 10px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-size: 15px;
+    line-height: 1;
+    font-weight:700;
+    color: white;
+    text-transform: capitalize;
+    background-size: 200%;
+
+    background-image: -o-linear-gradient(left, var(--tj-theme-primary) 0%, var(--tj-theme-secondary) 51%, var(--tj-theme-primary) 100%);
+    background-image: linear-gradient(to right, var(--tj-theme-primary) 0%, var(--tj-theme-secondary) 51%, var(--tj-theme-primary) 100%);
+
+   
+    padding: 17px 35px;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+
+  }
+  .btn-primary i {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+  }
+  .btn-primary:hover {
+    background-position: -100%;
+  }
+  .btn-primary:hover i {
+    -webkit-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+  }
+
+  .nav-link{
+    position: relative;
+  }
+  
+.nav-link::after{
+  content: " ";
+  opacity: 0;
+  transition: all 0.1s;
+  height: 2px;
+    width: 90%;
+background-color: #6638bb;
+position: absolute;
+bottom: 1rem;
+left: 2px;
+
+}
+.nav-link:hover::after{
+
+  opacity: 1;
+    }
+  
+
+
+  @media (max-width: 767.98px) {
+  
+    .navbar-brand {
+      font-size:2rem;
+      
+    }
+  
+    .navbar-nav .nav-link {
+      padding: 0.5rem;
+     
+    }
+    
+    
+    .hire-me-link {
+      display: block;
+      text-align: center;
+      margin-top: 0.5rem;
+     
+    }
+    .navbar-toggler {
+        display: block;
+        margin-left: 80rem;
+        position: absolute;
+      
+      }
+      .offcanvas-backdrop {
+        background-color: rgba(0, 0, 0,100); /* Adjust opacity as needed */
+        z-index: 1040; /* Ensure it is above other content */
+      }
+      
+.nav-link::after{
+  content: " ";
+  opacity: 0;
+  transition: all 0.1s;
+  height: 2px;
+    width: 90%;
+background-color: #6638bb;
+position: absolute;
+bottom: 0.5rem;
+left: 2px;
+
+}
+.nav-link:hover::after{
+
+  opacity: 1;
+    }
+  
+    .btn-primary{
+     position: relative;
+     margin-right: 23rem;
+    }
+    .navbar1{
+      background-color: white;
+      margin-bottom: 7rem;
+      height: 5rem;
+
+    }
+  }
+  
+
+  @media (max-width: 1402px) {
+    
+    .btn-primary{
+      margin-left: 9rem;
+   
+    }
+    
+  }
+  @media (max-width: 1400px) {
+    
+    .btn-primary{
+      margin-left: -30rem;
+
+   
+    }
+  }
+  @media (max-width: 1016px) {
+    
+    .btn-primary{
+      margin-left: -40rem;
+
+   
+    }
+  }
+  @media (max-width: 1015px) {
+    
+    .btn-primary{
+      margin-left: -21rem;
+
+   
+    }
+  }

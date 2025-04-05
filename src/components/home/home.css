@@ -1,0 +1,342 @@
+body {
+  font-family: "Sora", sans-serif;
+  font-size: var(--tj-fz-body);
+  font-weight: var(--tj-fw-regular);
+  color: #dddddd;
+
+}
+
+.home__content{
+    grid-template-columns: 116px repeat(2,1fr);
+    column-gap: 3rem;
+    padding-top: 10rem;
+    align-items:center;
+    padding-left: 9rem;
+   display: flex;
+   background-color:#0f0715
+
+
+}
+.home__social{
+     display: grid;
+     gap: 1.3rem;
+     margin-left: 3rem;
+     margin-bottom: 8rem;
+     color: #dddddd;
+    
+}
+.home__social-icon{
+  color: #dddddd;
+    font-size: 1.15rem;
+    border-radius: 60rem;
+    transition: box-shadow 0.3s ease;
+   
+    
+}
+.home__social-icon:hover{
+  background-color: #dddddd;
+  box-shadow: 0 0 5px  rgb(141, 142, 142) ,
+  0 0 5px  rgb(248, 255, 255), 
+  0 0 2px  rgb(217, 226, 226),
+   0 0 2px  rgb(183, 195, 195);
+
+    color: #0A3366;
+}
+.home__img{
+    background: url(../../assets/profile.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: inset 0 0 0 9px #b7a6d7;;
+    order: 1;
+    justify-self: center;
+    width: 480px;
+    height: 480px;
+    animation: profile__animate 8s ease-in-out infinite 1s;
+    margin-left: 2rem;
+ margin-top: -5rem;
+ 
+}
+.btn-primary-1 {
+  margin-right: 10rem;
+ gap: 10px;
+ -webkit-box-align: center;
+ -ms-flex-align: center;
+ align-items: center;
+ -webkit-box-pack: center;
+ -ms-flex-pack: center;
+ justify-content: center;
+ font-size: 15px;
+ line-height: 1;
+ font-weight:700;
+ color: white;
+ text-transform: capitalize;
+ background-size: 200%;
+ background-image: -webkit-gradient(linear, left top, right top, from(var(--tj-theme-primary)), color-stop(51%, var(--tj-theme-secondary)), to(var(--tj-theme-primary)));
+ background-image: -o-linear-gradient(left, var(--tj-theme-primary) 0%, var(--tj-theme-secondary) 51%, var(--tj-theme-primary) 100%);
+ background-image: linear-gradient(to right, var(--tj-theme-primary) 0%, var(--tj-theme-secondary) 51%, var(--tj-theme-primary) 100%);
+ border: none;
+
+ padding: 17px 35px;
+ -webkit-transition: 0.4s;
+ -o-transition: 0.4s;
+ transition: 0.4s;
+ margin-top: 3rem;
+ height: 3rem;
+
+
+}
+.btn-primary-1 span{
+  color: white;
+  font-family: 700;
+   font-size: larger;
+  
+}
+.btn-primary-1 i {
+ -webkit-transform: rotate(-45deg);
+ -ms-transform: rotate(-45deg);
+ transform: rotate(-45deg);
+ -webkit-transition: 0.4s;
+ -o-transition: 0.4s;
+ transition: 0.4s;
+ color: white;
+}
+.btn-primary-1:hover {
+ background-position: -100%;
+}
+.btn-primary-1:hover i {
+ -webkit-transform: rotate(0);
+ -ms-transform: rotate(0);
+ transform: rotate(0);
+}
+@keyframes profile__animate{
+    0%{
+        border-radius: 60% 40% 30% 70%/ 60% 30% 70% 40%;
+    }
+    50%{
+        border-radius: 30% 60% 70% 40% /50% 60% 30% 60%;
+    }
+    100%{
+        border-radius: 60% 40% 30% 70%/ 60% 30% 70% 40%;
+    }
+
+}
+.button {
+
+    display: inline-block;
+    background-color:var(--title-color);
+    color: var(--container-color);
+    padding: 2rem 2rem;
+    border-radius:1rem;
+    font-weight: var(--font-medium);
+    margin-top: 1.4rem;
+    height: 1rem;
+    padding-top:1rem ;
+}
+
+
+.button__icon{
+  padding-left: 0.4rem;
+  width: 2rem;
+  
+  
+}
+.home__title{
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+    padding-left: 3rem;
+    padding-bottom: 8rem;
+    color: #dddddd;
+}
+.home__hand{
+     width: 38px;
+     height: 38px;
+     margin-left: 0.4rem;
+     
+}
+.home__subtitle{
+    position: relative;
+    font-size: 1.4rem;
+    padding-right: 5.4rem;
+    font-weight: 500;
+    margin-top: 2rem;
+  
+ 
+     bottom:  1rem;
+     color: #dddddd;
+   
+}
+
+.home__description{
+    max-width: 430px;
+   margin-top: 0.025rem;
+   color: #ffffff;
+  
+}
+.home__scroll-button{
+   
+margin-top: 4rem;
+position: absolute;
+  
+}
+
+.home__scroll{
+    margin-left: 19rem;
+    color: #dddddd;
+   
+   
+    
+
+  
+}
+
+.wheel{
+    animation: scroll 2s ease infinite;
+}
+@keyframes scroll{
+    0%{
+        transform: translateY(0);
+    }
+    30%{
+        transform: translateY(3.75rem);
+    }
+}
+.home__scroll-name{
+    color: #211f4d;
+    font-weight: 500;
+    margin-right: 0.25rem;
+    margin-left:0.4rem;
+    font-size: 1rem;
+
+    
+ 
+    
+   
+   
+   
+
+ 
+}
+.home__scroll-arrow {
+    font-size: 1.25rem;
+    color: #020101;
+
+    margin-left: 0.01rem;
+   
+
+}
+
+@media screen and (max-width:992px){
+    .home__content{
+        grid-template-columns: 100px repeat(2,1fr);
+        column-gap: 1.25rem;
+     
+
+    }
+    .home__hand{
+        width: 26px;
+        height: 26px;
+    }
+
+  .home__title h1{
+    font-size:30px;
+  }
+  .home__subtitle{
+    margin-top: 2rem;
+    font-size: 15px;
+     right: 2rem;
+ 
+    margin-bottom: 0.1rem;
+  }
+  .home__subtitle::before{
+    width: 38px;
+    top: 0.8rem;
+    left: -3rem;
+  }
+  .home__description{
+    font-size: 14px;
+  }
+  .button{
+    
+    padding-bottom: 3rem;
+    position: absolute;
+
+
+  }
+  .home__scroll-button{
+    margin-left: -2rem;
+  }
+  .home__img{
+    width: 430x;
+    height: 430px;
+    box-shadow: inset 0 0 0 8px rgb(255 255 255/30%);
+  }
+  .home__data h1{
+    font-weight: 600;
+  }
+  
+}
+@media screen and (max-width:767px) {
+  .home__content{
+    grid-template-columns: 0.5fr 3fr;
+    padding-top: rem;
+    display: block;
+    width: 100%;
+   
+  }.home__img{
+    
+    box-shadow: inset 0 0 0 6px #b7a6d7;
+  }
+  .home__social{
+    margin-top:1rem;
+    position: absolute;
+    margin-left: -5rem;
+    
+  }
+  .home__data{
+    grid-column: 1/3;
+    margin-top: 2rem;
+    margin-left: -7rem;
+  }
+
+  .home__data h1{
+    font-weight: 600;
+
+  }
+  .home__description{
+   max-width: 50rem;
+  
+  }
+  .button{
+      
+    padding-top: 15px;
+    padding-bottom: 35px;
+    width: 8rem;
+  }
+  .button span{
+   font-size: 13px;
+ 
+   
+  }
+  .btn-primary-1{
+    width: 10rem;
+
+  
+  }
+  .btn-primary-1 span{
+    font-size: 1.2rem;
+  }
+  .button__icon{
+    width: 28px;
+    height: 28px;
+    position: absolute;
+  }
+  .button{
+   margin-top: 1rem;
+   
+  }
+  .home__scroll{
+    display: none;
+  }
+  .home__subtitle{
+    margin-left: 2rem;}
+  }
